@@ -1,20 +1,18 @@
-"use client"
-
 import './globals.css'
-import {TaskProvider} from '../context/taskContext.jsx'
+import Header from '../components/Header/index.jsx'
 
 const RootLayout = ({ children }) =>{
   return <html lang="en">
     <head/>
     <body>
-      {/* <Header/> */}
+      <Header/>
       {/* <Nav/> */}
       <section>
         <main>
           {/* here the tasks registered! */}
-          <TaskProvider>
+          {/* <TaskProvider> */}
           {children}
-          </TaskProvider>
+          {/* </TaskProvider> */}
         </main>
       </section>
        {/* google advertising or any. */}
