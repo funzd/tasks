@@ -1,18 +1,17 @@
 import './globals.css'
 import Header from '../components/Header/index.jsx'
+import Nav from '../components/Nav/index.jsx'
 
 const RootLayout = ({ children }) =>{
   return <html lang="en">
     <head/>
-    <body>
+    <body className="border-solid border-2 content-center">
       <Header/>
-      {/* <Nav/> */}
+      <Nav/>
       <section>
         <main>
           {/* here the tasks registered! */}
-          {/* <TaskProvider> */}
           {children}
-          {/* </TaskProvider> */}
         </main>
       </section>
        {/* google advertising or any. */}
