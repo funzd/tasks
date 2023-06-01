@@ -5,7 +5,7 @@ import {useState} from "react"
 
 const Nav = () =>{
   const [active, setActive] = useState(true)
-  const style = "font-bold rounded-full bg-cyan-500 p-1"
+  const style = "font-bold rounded-full bg-cyan-500 px-4"
   const On = () =>{
     setActive(true)
   }
@@ -14,20 +14,20 @@ const Nav = () =>{
   }
 
   return <nav  className="border-solid border-b-2 content-center">
-    <ul className="flex justify-center m-2">
-      <li className="ml-6 mr-6">
+    <ul className="flex justify-center">
+      <li className="mx-6">
         <Link 
           className={(active)?style:"text-gray-500"} 
           onClick={On}
-          href="#">
+          href="/owns/">
           Owns 
         </Link>
       </li>
-      <li className="ml-6 mr-6">
+      <li className="mx-6">
        <Link
           className={(active)?"text-gray-500":style}
           onClick={Off}
-          href="#">
+          href="/teams/">
           Teams  
         </Link>
       </li>

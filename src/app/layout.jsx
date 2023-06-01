@@ -1,6 +1,7 @@
 import './globals.css'
 import Header from '../components/Header/index.jsx'
 import Nav from '../components/Nav/index.jsx'
+import {TaskProvider} from '../context/taskContext.jsx'
 
 const RootLayout = ({ children }) =>{
   return <html lang="en">
@@ -9,10 +10,10 @@ const RootLayout = ({ children }) =>{
       <Header/>
       <Nav/>
       <section>
-        <main>
-          {/* here the tasks registered! */}
+        {/* here the tasks registered! */}
+        <TaskProvider>
           {children}
-        </main>
+        </TaskProvider>
       </section>
        {/* google advertising or any. */}
       {/* <Advertising/> */}
@@ -21,3 +22,4 @@ const RootLayout = ({ children }) =>{
 }
 
 export default RootLayout
+

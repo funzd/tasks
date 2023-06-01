@@ -1,8 +1,6 @@
-import Header from '../components/Header/index.jsx'
-const Home = () =>
-<>
- welcome to task
+import OwnsMain from './owns/page.jsx'
 
-</>
+const Home = () =>
+  <OwnsMain/>
 
 export default Home
