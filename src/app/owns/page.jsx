@@ -1,7 +1,7 @@
 const OwnsMain = () => 
   <main className="my-3">
     <button
-      className="my-2 bg-blue-500 hover:bg-blue-700 text-white 
+      className="my-2 bg-blue-400 hover:bg-blue-700 text-white 
       font-bold px-4 rounded-full"
       type="submit" 
       onclick="">
